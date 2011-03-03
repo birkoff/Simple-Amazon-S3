@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest">
+    <em:name>s3://</em:name>
+    <em:id>s3@overstimulate.com</em:id>
+    <em:version>0.11</em:version>
+    <em:description>S3 protocol</em:description>
+    <em:developer>Jesse Andrews; http://overstimulate.com</em:developer>
+    <em:developer>Hector Aleman; http://birkoff.net</em:developer>
+    
+    <!-- firefox -->
+    <em:targetApplication>
+      <RDF:Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.0b1</em:minVersion>
+        <em:maxVersion>3.0.*</em:maxVersion>
+      </RDF:Description>
+    </em:targetApplication>
+
+    <em:file>
+      <RDF:Description RDF:about="urn:mozilla:extension:file:s3">
+        <em:package>content/</em:package>
+      </RDF:Description>
+    </em:file>
+  </RDF:Description>
+</RDF:RDF>

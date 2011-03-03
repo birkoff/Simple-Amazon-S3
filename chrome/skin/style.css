@@ -1,0 +1,119 @@
+body {
+  background: #eee;
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:active {text-decoration: none}
+/*a:hover {text-decoration: underline; color: red;}*/
+
+#active {
+  background: #fff;
+  -moz-border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 20px 0;
+  min-height: 100px;
+}
+
+#active.busy {
+  background: #fff url(big-spinner.gif) no-repeat center center;
+}
+
+#keylist td {
+  padding: 3px 0;
+}
+
+#keylist tr:hover td {
+  background-color:#BBBBBB ;
+}
+
+.upload_label {
+  font-weight: bold;
+}
+
+.upload_box {
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  right: 20px;
+}
+
+.add_folder_box {
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  right: 150px;
+}
+
+.upload_box input {
+  font-weight: bold;
+}
+
+tr .delete {
+    display: none;
+}
+
+tr:hover .delete {
+  display: inline;
+  text-decoration: none;
+  background: #fff url(delete.png) no-repeat center left;
+  padding: 2px 4px 2px 20px;
+  border: 1px solid #888;
+  font-size: 12px;
+  color: #888;
+}
+
+.delete:hover {
+  border-color: #000;
+  color: #f00;
+}
+
+.upload {
+  text-decoration: none;
+  background: #fff url(arrow_up.png) no-repeat center left;
+  padding: 2px 4px 2px 20px;
+  border: 1px solid #888;
+  font-size: 18px;
+  color: #888;
+}
+
+.add_folder {
+  text-decoration: none;
+  background: #fff url(add.png) no-repeat center left;
+  padding: 2px 4px 2px 20px;
+  border: 1px solid #888;
+  font-size: 18px;
+  color: #888;
+}
+
+.add_folder:hover {
+  border-color: #000;
+  color: #080;
+}
+
+.upload:hover {
+  border-color: #000;
+  color: #080;
+}
+
+.icon {
+background-position: 0% 40%;
+background-repeat: no-repeat !important;
+padding-left: 20px;
+padding-top: 2px;
+cursor: hand;
+}
+
+.icon-dir { background: url(folder-saved-search.png); }
+.icon-generic { background: url(applications-other.png); }
+.icon-img { background: url(image-x-generic.png); }
+.icon-doc { background: url(generic.png); }
+.icon-music { background: url(audio-x-generic.png); }
+.icon-video { background: url(applications-multimedia.png); }
+.icon-dir-key { background: url(key.png); }
